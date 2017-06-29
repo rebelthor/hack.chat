@@ -37,7 +37,7 @@ function join(channel) {
 	}
 	else {
 		// for local installs
-		ws = new WebSocket('ws://' + document.domain + ':6060')
+		ws = new WebSocket('wss://' + document.domain + '/chat-ws')
 	}
 
 	var wasConnected = false
